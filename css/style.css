@@ -898,10 +898,10 @@ img {
   position: absolute;
   top: 50%;
   margin-top: -50px; 
-    transition: all 2s ease-in-out;
-    -webkit-transition: all 2s ease-in-out;
-    -moz-transition: all 2s ease-in-out;
-    -o-transition: all 2s ease-in-out;}
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;}
 
 .fore-bird {
   width: 960px;
@@ -913,10 +913,10 @@ img {
   left: 50%;
   margin-left: -480px;
   top: 380px; 
-    transition: all 2s ease-in-out;
-    -webkit-transition: all 2s ease-in-out;
-    -moz-transition: all 2s ease-in-out;
-    -o-transition: all 2s ease-in-out;}
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;}
 
 .back-bird {
   width: 960px;
@@ -927,10 +927,10 @@ img {
   position: absolute;
   left: 50%;
   margin-left: -480px;
-    transition: all 2s ease-in-out;
-    -webkit-transition: all 2s ease-in-out;
-    -moz-transition: all 2s ease-in-out;
-    -o-transition: all 2s ease-in-out;}
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;}
 .clothes-pics {
   margin-bottom: 100px; }
   .clothes-pics figure {
@@ -938,7 +938,7 @@ img {
     position: relative;
     opacity: 0;
     transform: translateX(30px);
-    transition: all 0.4s ease-in-out;
+    transition: all 0.4s linear;
     overflow: hidden;
     cursor: pointer; }
     .clothes-pics figure.is-showing {
@@ -947,7 +947,7 @@ img {
     .clothes-pics figure img {
       display: block;
       transform: scale(1);
-      transition: all 0.3s ease-in-out; }
+      transition: all 0.3s linear; }
     .clothes-pics figure:hover figcaption {
       left: 0%; }
     .clothes-pics figure:hover img {
@@ -960,7 +960,7 @@ img {
     color: white;
     padding: 2px 8px;
     font-size: 11px;
-    transition: all 0.3s ease-in-out; }
+    transition: all 0.3s linear; }
 
 .large-window {
   height: 640px;
@@ -1003,7 +1003,7 @@ img {
       color: white;
       border: 1px solid white;
       padding: 10px 20px;
-      transition: all 0.3s ease-in-out; }
+      transition: all 0.3s linear; }
       .large-window .promo-text .window-cta:hover {
         background: white;
         color: black; }
