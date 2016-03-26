@@ -1,0 +1,23 @@
+.wrap{
+    clear:                  both;
+	width:				    100%;
+	max-width:				1200px;
+	margin:					0 auto;
+	position:				relative;
+}
+.l42 {
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+}
+.l41 {
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+}
+.frame1 {
+    position: relative;
+    top:-150px;
+}

@@ -15,35 +15,20 @@
     <script src="js/functions.js"></script>
     </head>
     <body>
-        <style>
-.frame{
-    position: relative;
-    height: 600px;
-    overflow: hidden;
-    -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 600px, 0 500px);
-}
-#l1{
-    position: absolute;
-    background-image: url(img/bird-bg.jpg);
-    width: 100%;
-    height: 150%;
-    background-size: auto 100%;
-}
-#l2{
-    position: absolute;
-    background-image: url(img/fore-bird.png);
-    width: 20%;
-    height: 20%;
-    bottom: 10%;
-    left: 20%;
-}
-        </style>
         <div class="wrap">
-            <div class="frame">
-                <div id="l1"></div>
-                <div id="l2"></div>
-                <div id="l3"></div>
-            </div>
+            <svg class="frame" width="1200px" height="600px" viewBox="0 0 1200 600" clip-path="url(#clip)">
+                <image class="l42" width="1552px" height="800px" x="0px" y="0px" xlink:href="img/bird-bg.jpg" />
+                <image class="l41" width="111px" height="183px" x="0px" y="420px" xlink:href="img/fore-bird.png" />
+                <clipPath id="clip">
+                    <polygon points="1200,400 0,600 0,0 1200,0 "/>
+                </clipPath>
+            </svg>
+            <svg class="frame1" width="1200px" height="600px" viewBox="0 0 1200 600" clip-path="url(#clip1)">
+                <image class="l40" width="1552px" height="800px" x="0px" y="-600px" xlink:href="img/bird-bg.jpg" />
+                <clipPath id="clip1">
+                    <polygon points="1200,0 0,200 0,400 1200,400 "/>
+                </clipPath>
+            </svg>
             <br>
             <br>
             <br>

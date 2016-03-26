@@ -4,15 +4,10 @@ $(function(){
     $(window).scroll(function(){
         wScroll = $(this).scrollTop();
         if (wScroll <= pContainerHeight) {
-            $('#l1').css({
-              'transform' : 'translate(0, -'+ wScroll /40 +'%)'
-            });
-            $('#l11').css({
-              'transform' : 'translate(0, -'+ wScroll /40 +'%)'
-            });
-            $('#l2').css({
-              'transform' : 'translate('+ wScroll /5 +'%, 0)'
-            });
+            $('.l40').attr('y', -50-wScroll/40 +'%');
+            $('.l42').attr('y', '-'+ wScroll/40 +'%');
+            $('.l41').attr('x', wScroll/10 +'%');
+            console.log(wScroll);
         }
     });
 });
