@@ -1,14 +1,14 @@
 body, html{
     background:             #000000;
 }
+
+svg{
+    //line-height:            0;
+}
 .wrap{
-    clear:                  both;
-	width:				    100%;
-	max-width:				1200px;
-	margin:					0 auto;
-	position:				relative;
-    padding:                50px;
-    background:             #ffffff;
+	//max-width:				1100px;
+    //padding:                50px;
+    background:             #333333;
 }
 .l42 {
     transition: all 0.5s linear;
@@ -24,20 +24,17 @@ body, html{
 }
 .frame {
     position: relative;
+    margin-bottom:-200px;
 }
 .frame1 {
     position: relative;
-    top:-150px;
 }
 .frame2 {
     position: relative;
-    top:-100px;
 }
 .frame3 {
     position: relative;
-    top:-50px;
 }
 .frame4 {
     position: relative;
-    top:0px;
 }
