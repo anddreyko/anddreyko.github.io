@@ -1,16 +1,13 @@
 body, html{
     background:             #000000;
 }
-header{
-    position:               absolute;
-    top:                    1485px;
-    color:                  #ffffff;
-    text-transform:         uppercase;
-    z-index:                2;
-    font-size:              60px;
-    font-family:            Helvetica, sans-serif, Arial;
-    text-align:             center;
-    width:                  100%;
+.header{
+    fill: #ffffff;
+    font-family: 'Helvetica UltraLight', Helvetica, sans-serif, Arial;
+    font-size: 130px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 100;
 }
 svg{
     //line-height:            0;
