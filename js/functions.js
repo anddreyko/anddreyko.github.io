@@ -1,23 +1,34 @@
 $(function(){
     var frame = $('.frame')
       , frameHeight = frame.height()
-      , frameTop = frame.offset().top;
-    var wScroll = 0
+      , frameTop = frame.offset().top
+      , wScroll = 0
       , screen = $(window)
       , w = screen.width()
       , h = screen.height()
-      , k = w/1200;
-    frame
-        .attr('width'
-          , w)
-        .attr('height'
-          , frame.attr('height')*k);
-    /*
+      , k = 1900/w;
+    resized();
+    
+    screen.resize(function(){
+        w = screen.width();
+        h = screen.height();
+        resized();
+    });
+    
     screen.scroll(function(){
         wScroll = $(this).scrollTop();
         //обход списка фреймов
         //animate(frame);
     });
+    
+    function resized(){
+        frame
+            .attr('width'
+              , w)
+            .attr('height'
+              , frame.attr('height')/k)
+    }
+    
     function animate(frame){
         var frameHeight = frame.height()
           , frameTop = frame.offset().top;
@@ -29,5 +40,5 @@ $(function(){
             $('.l41').attr('x', (wScroll-frameTop)/10 +'%');
             console.log(frameTop);
         }
-    }*/
+    }
 });
