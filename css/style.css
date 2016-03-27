@@ -17,7 +17,7 @@ svg{
     //padding:                50px;
     background:             #333333;
 }
-.layout {
+.l1, .l2, .l3, .l4 {
     transition: all 0s linear;
     -webkit-transition: all 0s linear;
     -moz-transition: all 0s linear;

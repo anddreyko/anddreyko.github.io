@@ -35,7 +35,7 @@ $(function(){
     function animate(frame){
         var frameHeight = frame.height()
           , frameTop = frame.offset().top;
-            console.log((wScroll+h)/k);
+           // console.log((wScroll+h)/k);
         if (wScroll+h >= 1250/k) {                              //from 1250 to (2250-screenHeight)
             $('.l1').attr('y', (wScroll+h) +'px');              //to 2250
             $('.l2').attr('y', (wScroll+h)/1.1 +'px');          //from 785px to 1315px = 530px
