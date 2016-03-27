@@ -17,18 +17,12 @@ svg{
     //padding:                50px;
     background:             #333333;
 }
-.l42 {
-    transition: all 0.5s linear;
-    -webkit-transition: all 0.5s linear;
-    -moz-transition: all 0.5s linear;
-    -o-transition: all 0.5s linear;
-}
-.l41 {
-    transition: all 0.5s linear;
-    -webkit-transition: all 0.5s linear;
-    -moz-transition: all 0.5s linear;
-    -o-transition: all 0.5s linear;
-}
+.layout {
+    transition: all 0s linear;
+    -webkit-transition: all 0s linear;
+    -moz-transition: all 0s linear;
+    -o-transition: all 0s linear;
+}/**/
 .frame {
     position: relative;
     margin-bottom:-200px;
