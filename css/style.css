@@ -4,10 +4,13 @@ body, html{
 .header{
     fill: #ffffff;
     font-family: 'Helvetica UltraLight', Helvetica, sans-serif, Arial;
-    font-size: 130px;
+    font-size: 120px;
     text-transform: uppercase;
     letter-spacing: 6px;
     font-weight: 100;
+    text-align: center;
+    width:  100%;
+    position: absolute;
 }
 svg{
     //line-height:            0;
@@ -17,25 +20,48 @@ svg{
     //padding:                50px;
     background:             #333333;
 }
-.l1, .l2, .l3, .l4 {
-    transition: all 0s linear;
-    -webkit-transition: all 0s linear;
-    -moz-transition: all 0s linear;
-    -o-transition: all 0s linear;
-}/**/
+.l1, .l2, .l3, .l4, .l5, .l6 {
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+}
+.l1 {
+    y: 820px;
+}
+.l2 {
+    y: 785px;
+}
+.l3 {
+    y: 630px;
+}
+.l4 {
+    y: 520px;
+}
+.l5 {
+    y: 320px;
+}
+.l6 {
+    y: 2775px;
+}
+.l7 {
+    y: 760px;
+}
+.l8 {
+    y: 630px;
+}
+.l9 {
+    y: 900px;
+}
+.l10 {
+    y: 130px;
+}
 .frame {
     position: relative;
-    margin-bottom:-200px;
+    //margin-bottom:-200px;
+   // overflow: hidden;
+    width:100%;
 }
-.frame1 {
-    position: relative;
-}
-.frame2 {
-    position: relative;
-}
-.frame3 {
-    position: relative;
-}
-.frame4 {
-    position: relative;
+.layout{
+    position: absolute;
 }
