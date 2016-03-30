@@ -857,7 +857,5 @@ footer {
     
 .wrap{
 	position:				relative;
-    clear:                  both;
 	width:				    100%;
-	margin:					0 auto;
 }
