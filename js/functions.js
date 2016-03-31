@@ -1,15 +1,17 @@
-var screen = $(window)
-  , h = screen.height()
-  , w = screen.width()
-  , k = 1900/w
-  , scrollTop
-  , scrollBottom
-  , scrollBegin
-  , scrollEnd
-  , wrap;
+var screen = $(window);
+var h = screen.height();
+var w = screen.width();
+var k = 1900/w;
+var scrollTop;
+var scrollBottom;
+var scrollBegin;
+var scrollEnd;
+var wrap;
 
 $(function(){
     Resize();
+    Scroll();
+    $('.start').removeClass('start');
     screen.resize(function(){
     	Resize();
     });
@@ -25,6 +27,8 @@ function Resize(){
     wrap.css('max-width','100%');
     k = 1920/wrap.width();
     $('.header').css({'font-size':(90/k)+'px'});
+    $('.text h2').css({'font-size':(45/k)+'px'});
+    $('.text p').css({'font-size':(22/k)+'px'});
     $('.frame').each(function(i, e){
         $(e).css({'height': $(e).attr('height')/k+'px'});
     });
@@ -32,36 +36,44 @@ function Resize(){
 function Scroll(){
     scrollTop = $(window).scrollTop();
     scrollBottom = scrollTop + h;
-    scrollBegin = 1;
-    scrollEnd = 820/k;
-    if (scrollBottom >= scrollBegin
-     && scrollTop <= scrollEnd) {
+    scrollBegin = 0;
+    scrollEnd = $('.f1').height();
+    if (scrollTop <= scrollEnd
+     && scrollBottom >= scrollBegin) {
         $('.f1l1').css({'top':Path(24,6) +'%'});
-    console.log(Path(24,6));
-    }
-    /*scrollBegin = scrollEnd;
-    scrollEnd = 3200/k+scrollEnd;
-    if (scrollTop >= scrollBegin
-     && scrollBottom <= scrollEnd) {
-        $('.l5').css({'y':Path(250,320) +'px'});
-        $('.l6').css({'y':Path(2500,2775) +'px'});
+        $('.f1l3').css({'top':Path(24,13) +'%'});
     }
     scrollBegin = scrollEnd;
-    scrollEnd = 1900/k+scrollEnd;
-    if (scrollTop >= scrollBegin
-     && scrollBottom <= scrollEnd) {
-        $('.l7').css({'y':Path(300,760) +'px'});
+    scrollEnd += $('.f2').height();
+    if (scrollTop <= scrollEnd
+     && scrollBottom >= scrollBegin) {
+        $('.f2l1').css({'top':Path(-9,-27) +'%'});
     }
     scrollBegin = scrollEnd;
-    scrollEnd = 1900/k+scrollEnd;
-    if (scrollTop >= scrollBegin
-     && scrollBottom <= scrollEnd) {
-        $('.l8').css({'y':Path(130,630) +'px'});
-        $('.l9').css({'y':Path(780,900) +'px'});
-        $('.l10').css({'y':Path(520,130) +'px'});
-    }*/
+    scrollEnd += $('.f3').height();
+    if (scrollTop <= scrollEnd
+     && scrollBottom >= scrollBegin) {
+        $('.f3l1').css({'top':Path(-1,-17) +'%'});
+    }    
+    scrollBegin = scrollEnd;
+    scrollEnd += $('.f4').height();
+    if (scrollTop <= scrollEnd
+     && scrollBottom >= scrollBegin) {
+        $('.f4l4').css({'top':Path(-5,-19) +'%'});
+        $('.f4l2').css({'top':Path(-9,-30) +'%'});
+        $('.f4l1').css({'top':Path(-20,20) +'%'});
+    }
+    scrollBegin = scrollEnd;
+    scrollEnd += $('.f5').height();
+    if (scrollTop <= scrollEnd
+     && scrollBottom >= scrollBegin) {
+        $('.f5l1').css({'top':Path(13,29) +'%'});
+    }
 }
 function Path(pathEnd,pathBegin){
-    //              (нижняя граница окна минус начало скролла на странице)  //путь анимации делить на путь скролла
-    return pathBegin+(scrollBottom-scrollBegin)*(pathEnd-pathBegin)/(scrollEnd-scrollBegin);
+    //              (нижняя граница окна минус начало скролла на странице)  //путь анимации делить на путь скроллаscrollEnd-scrollBegin
+    var r=pathBegin+(scrollBottom-scrollBegin/*scrollEnd-scrollTop*/)*(pathEnd-pathBegin)/(scrollEnd - scrollBegin + h);
+    /*if(r<pathBegin) r=pathBegin;
+    else if(r>pathEnd) r=pathEnd;*/
+    return r;
 }
