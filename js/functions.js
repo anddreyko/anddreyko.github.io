@@ -1,11 +1,13 @@
 var screen = $(window);
-var h = screen.height();
-var w = screen.width();
-var k = 1900/w;
+var screenHeight = screen.height();
+var screenWidth = screen.width();
+var picWidth = 1920;
+var k = picWidth/screenWidth;
 var scrollTop;
 var scrollBottom;
-var scrollBegin;
-var scrollEnd;
+var frameTop;
+var frameBottom;
+var frameHeight;
 var wrap;
 
 $(function(){
@@ -18,62 +20,70 @@ $(function(){
     screen.scroll(function(){
     	Scroll();
     });
+    
 });
 
 function Resize(){
-    h = screen.height();
-    w = screen.width();
+    screenHeight = screen.height();
+    screenWidth = screen.width();
     wrap = $('.wrap');
-    wrap.css('max-width','100%');
-    k = 1920/wrap.width();
+    wrap.css('width','100%');
+    k = picWidth/wrap.width();
     $('.header').css({'font-size':(90/k)+'px'});
     $('.text h2').css({'font-size':(45/k)+'px'});
     $('.text p').css({'font-size':(22/k)+'px'});
+    $('.text-final h2').css({'font-size':(60/k)+'px'});
+    $('.text-final p').css({'font-size':(32/k)+'px'});
     $('.frame').each(function(i, e){
         $(e).css({'height': $(e).attr('height')/k+'px'});
     });
 }
+
 function Scroll(){
-    scrollTop = $(window).scrollTop();
-    scrollBottom = scrollTop + h;
-    scrollBegin = 0;
-    scrollEnd = $('.f1').height();
-    if (scrollTop <= scrollEnd
-     && scrollBottom >= scrollBegin) {
+    scrollTop = screen.scrollTop();
+    scrollBottom = scrollTop + screenHeight;
+    frameTop = 0;
+    frameHeight = $('.f1').height();
+    frameBottom = frameHeight;
+    if (scrollTop <= frameBottom && scrollBottom >= frameTop) {
         $('.f1l1').css({'top':Path(24,6) +'%'});
         $('.f1l3').css({'top':Path(24,13) +'%'});
     }
-    scrollBegin = scrollEnd;
-    scrollEnd += $('.f2').height();
-    if (scrollTop <= scrollEnd
-     && scrollBottom >= scrollBegin) {
+    frameTop = frameBottom;
+    frameHeight = $('.f2').height();
+    frameBottom += frameHeight;
+    if (scrollTop <= frameBottom && scrollBottom >= frameTop) {
         $('.f2l1').css({'top':Path(-9,-27) +'%'});
     }
-    scrollBegin = scrollEnd;
-    scrollEnd += $('.f3').height();
-    if (scrollTop <= scrollEnd
-     && scrollBottom >= scrollBegin) {
+    frameTop = frameBottom;
+    frameHeight = $('.f3').height();
+    frameBottom += frameHeight;
+    if (scrollTop <= frameBottom && scrollBottom >= frameTop) {
         $('.f3l1').css({'top':Path(-1,-17) +'%'});
     }    
-    scrollBegin = scrollEnd;
-    scrollEnd += $('.f4').height();
-    if (scrollTop <= scrollEnd
-     && scrollBottom >= scrollBegin) {
+    frameTop = frameBottom;
+    frameHeight = $('.f4').height();
+    frameBottom += frameHeight;
+    if (scrollTop <= frameBottom && scrollBottom >= frameTop) {
         $('.f4l4').css({'top':Path(-5,-19) +'%'});
         $('.f4l2').css({'top':Path(-9,-30) +'%'});
         $('.f4l1').css({'top':Path(-20,20) +'%'});
     }
-    scrollBegin = scrollEnd;
-    scrollEnd += $('.f5').height();
-    if (scrollTop <= scrollEnd
-     && scrollBottom >= scrollBegin) {
+    frameTop = frameBottom;
+    frameHeight = $('.f5').height();
+    frameBottom += frameHeight;
+    if (scrollTop <= frameBottom && scrollBottom >= frameTop) {
         $('.f5l1').css({'top':Path(13,29) +'%'});
     }
+    frameTop = frameBottom;
+    frameHeight = $('.f6').height();
+    frameBottom += frameHeight;
+    if (scrollTop <= frameBottom && scrollBottom >= frameTop) {
+        $('.f6l1').css({'left':Path(55,60) +'%'});
+        $('.f6l2').css({'left':Path(36,32) +'%'});
+    }
 }
+
 function Path(pathEnd,pathBegin){
-    //              (нижняя граница окна минус начало скролла на странице)  //путь анимации делить на путь скроллаscrollEnd-scrollBegin
-    var r=pathBegin+(scrollBottom-scrollBegin/*scrollEnd-scrollTop*/)*(pathEnd-pathBegin)/(scrollEnd - scrollBegin + h);
-    /*if(r<pathBegin) r=pathBegin;
-    else if(r>pathEnd) r=pathEnd;*/
-    return r;
+    return pathBegin+(scrollBottom-frameTop)*(pathEnd-pathBegin)/(frameHeight + screenHeight);
 }
