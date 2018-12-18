@@ -2,127 +2,142 @@
 
 /* cyrillic-ext */
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/ek4gzZ-GeXAPcSbHtCeQI_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/ek4gzZ-GeXAPcSbHtCeQI_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
 }
+
 /* cyrillic */
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
+
 /* greek-ext */
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/-2n2p-_Y08sg57CNWQfKNvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/-2n2p-_Y08sg57CNWQfKNvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
 }
+
 /* greek */
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/u0TOpm082MNkS5K0Q4rhqvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
-  unicode-range: U+0370-03FF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/u0TOpm082MNkS5K0Q4rhqvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
 }
+
 /* vietnamese */
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/NdF9MtnOpLzo-noMoG0miPesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/NdF9MtnOpLzo-noMoG0miPesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
 }
+
 /* latin-ext */
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/Fcx7Wwv8OzT71A3E1XOAjvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/Fcx7Wwv8OzT71A3E1XOAjvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
+
 /* cyrillic-ext */
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/s7gftie1JANC-QmDJvMWZhJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/s7gftie1JANC-QmDJvMWZhJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
 }
+
 /* cyrillic */
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/3Y_xCyt7TNunMGg0Et2pnhJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/3Y_xCyt7TNunMGg0Et2pnhJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
+
 /* greek-ext */
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/WeQRRE07FDkIrr29oHQgHBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/WeQRRE07FDkIrr29oHQgHBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
 }
+
 /* greek */
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/jyIYROCkJM3gZ4KV00YXOBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
-  unicode-range: U+0370-03FF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/jyIYROCkJM3gZ4KV00YXOBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
 }
+
 /* vietnamese */
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/phsu-QZXz1JBv0PbFoPmEBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/phsu-QZXz1JBv0PbFoPmEBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
 }
+
 /* latin-ext */
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/9_7S_tWeGDh5Pq3u05RVkhJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/9_7S_tWeGDh5Pq3u05RVkhJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/mnpfi9pxYH-Go5UiibESIltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/mnpfi9pxYH-Go5UiibESIltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
-*{
-    margin:                 0;
-    padding:                0;
-    text-align:             left;
-    font-family:            'Roboto', Helvetica, sans-serif, Arial, verdana, geneva, lucida, 'lucida grande';
-    box-sizing:             border-box;
-    -moz-box-sizing:        border-box;
-    -webkit-box-sizing:     border-box;
-    color:                  #ffffff;
-    //line-height:            0;
+
+* {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-family: 'Roboto', Helvetica, sans-serif, Arial, verdana, geneva, lucida, 'lucida grande';
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    color: #ffffff;
+/ / line-height: 0;
 }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -136,14 +151,15 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video, input, textarea {
-    margin:                 0;
-    padding:                0;
-    border:                 0;
-    font-size:              100%;
-    font:                   inherit;
-    vertical-align:         baseline;
-    text-decoration:        none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
 }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -152,67 +168,83 @@ small, strike, strong, sub, sup, tt, var,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td, input, textarea {
-    outline:                0;
-    vertical-align:         top;
-    background:             transparent;
+    outline: 0;
+    vertical-align: top;
+    background: transparent;
 }
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, main, menu, nav, section, summary {
-    display:                block;
+    display: block;
 }
-strong{
-    font-weight:            bold;
+
+strong {
+    font-weight: bold;
 }
-body{
-    //line-height:            1;
+
+body {
+/ / line-height: 1;
 }
+
 ol, ul {
-    list-style:             none;
+    list-style: none;
 }
-blockquote, q{
-    quotes:                 none;
+
+blockquote, q {
+    quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content:                '';
-    content:                none;
+    content: '';
+    content: none;
 }
-table{
+
+table {
     border-collapse: collapse;
-    border-spacing:         0;
+    border-spacing: 0;
 }
-td{
-    vertical-align:         top;
-    padding:                0;
+
+td {
+    vertical-align: top;
+    padding: 0;
 }
-a{
-    outline:                none;
+
+a {
+    outline: none;
 }
-a:hover{
-    text-decoration:        none;
+
+a:hover {
+    text-decoration: none;
 }
-body, html{
-	min-height:				100%;
-	height:					100%;
-    width:                  100%;
+
+body, html {
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
 }
-div{
-    -moz-background-size:	100%;
-    -webkit-background-size:100%;
-    -o-background-size:		100%;
-    background-size:		100%;
+
+div {
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
 }
+
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
-	display:				block;
+    display: block;
 }
-p{
-	text-align:				justify;
+
+p {
+    text-align: justify;
 }
+
 html {
-    font-family:            'Roboto', Helvetica, sans-serif, Arial, verdana, geneva, lucida, 'lucida grande';
+    font-family: 'Roboto', Helvetica, sans-serif, Arial, verdana, geneva, lucida, 'lucida grande';
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
+
 audio,
 canvas,
 progress,
@@ -220,6 +252,7 @@ video {
     display: inline-block;
     vertical-align: baseline;
 }
+
 audio:not([controls]) {
     display: none;
     height: 0;
@@ -273,7 +306,7 @@ small {
 sub,
 sup {
     font-size: 75%;
-    //line-height: 0;
+/ / line-height: 0;
     position: relative;
     vertical-align: baseline;
 }
@@ -349,7 +382,8 @@ input[type="submit"] {
     -webkit-appearance: button;
     /* 2 */
     cursor: pointer;
-    /* 3 */ }
+    /* 3 */
+}
 
 /**
  * Re-set default cursor for disabled elements.
@@ -373,7 +407,7 @@ input::-moz-focus-inner {
  * the UA stylesheet.
  */
 input {
-    //line-height: normal;
+/ / line-height: normal;
 }
 
 /**
@@ -388,7 +422,8 @@ input[type="radio"] {
     box-sizing: border-box;
     /* 1 */
     padding: 0;
-    /* 2 */ }
+    /* 2 */
+}
 
 /**
  * Fix the cursor style for Chrome's increment/decrement buttons. For certain
@@ -441,7 +476,8 @@ legend {
     border: 0;
     /* 1 */
     padding: 0;
-    /* 2 */ }
+    /* 2 */
+}
 
 /**
  * Remove default vertical scrollbar in IE 8/9/10/11.
@@ -522,6 +558,7 @@ th {
         padding: 0;
     }
 }
+
 /* For devices larger than 550px */
 @media (min-width: 550px) {
     .container {
@@ -671,6 +708,7 @@ th {
         margin-left: 52%;
     }
 }
+
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* NOTE
@@ -683,7 +721,7 @@ html {
 body {
     font-size: 1.5em;
     /* currently ems cause chrome bug misinterpreting rems on body element */
-    //line-height: 1.6;
+/ / line-height: 1.6;
 }
 
 /* Typography
@@ -696,37 +734,37 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 4.0rem;
-    //line-height: 1.2;
+/ / line-height: 1.2;
     letter-spacing: -.1rem;
 }
 
 h2 {
     font-size: 3.6rem;
-    //line-height: 1.25;
+/ / line-height: 1.25;
     letter-spacing: -.1rem;
 }
 
 h3 {
     font-size: 3.0rem;
-    //line-height: 1.3;
+/ / line-height: 1.3;
     letter-spacing: -.1rem;
 }
 
 h4 {
     font-size: 2.4rem;
-    //line-height: 1.35;
+/ / line-height: 1.35;
     letter-spacing: -.08rem;
 }
 
 h5 {
     font-size: 1.8rem;
-    //line-height: 1.5;
+/ / line-height: 1.5;
     letter-spacing: -.05rem;
 }
 
 h6 {
     font-size: 1.5rem;
-    //line-height: 1.6;
+/ / line-height: 1.6;
     letter-spacing: 0;
 }
 
@@ -756,6 +794,7 @@ h6 {
         font-size: 1.5rem;
     }
 }
+
 p {
     margin-top: 0;
 }
@@ -784,7 +823,7 @@ input[type="button"] {
     text-align: center;
     font-size: 11px;
     font-weight: 600;
-    //line-height: 38px;
+/ / line-height: 38 px;
     letter-spacing: .1rem;
     text-transform: uppercase;
     text-decoration: none;
@@ -1077,10 +1116,12 @@ footer {
     width: 100%;
     z-index: -1;
 }
+
 footer .footer-stuff {
     max-width: 640px;
     margin: 0 auto;
 }
-.wrap{
-	position:				relative;
+
+.wrap {
+    position: relative;
 }

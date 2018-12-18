@@ -1,4 +1,3 @@
-
 // SmoothScroll v0.9.9
 // Licensed under the terms of the MIT license.
 
@@ -12,31 +11,31 @@ $(function ($) {
 
         // Scroll Variables (tweakable)
         var framerate = 150; // [Hz]    150
-        var animtime  = 600; // [px]    400
-        var stepsize  = 150; // [px]    120
+        var animtime = 600; // [px]    400
+        var stepsize = 150; // [px]    120
 
         // Pulse (less tweakable)
         // ratio of "tail" to "acceleration"
         var pulseAlgorithm = true;
-        var pulseScale     = 5;    //   8
+        var pulseScale = 5;    //   8
         var pulseNormalize = 1;
 
         // Keyboard Settings
         var disableKeyboard = false;
-        var arrowscroll     = 50; // [px]   50
+        var arrowscroll = 50; // [px]   50
 
         // Excluded pages
         var exclude = "";
 
         // Other Variables
         var frame = false;
-        var direction = { x: 0, y: 0 };
-        var initdone  = false;
+        var direction = {x: 0, y: 0};
+        var initdone = false;
         var fixedback = true;
         var activeElement;
         var root;
 
-        var key = { left: 37, up: 38, right: 39, down: 40, spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36 };
+        var key = {left: 37, up: 38, right: 39, down: 40, spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36};
 
 
         /***********************************************
@@ -79,7 +78,7 @@ $(function ($) {
             var scrollHeight = body.scrollHeight;
 
             // check compat mode for root element
-            root = (document.compatMode.indexOf('CSS') >= 0) ? html : body;
+            root = (document.compatMode.indexOf("CSS") >= 0) ? html : body;
             activeElement = body;
 
             initTest();
@@ -143,7 +142,7 @@ $(function ($) {
                 x: left,
                 y: top,
                 lastX: (left < 0) ? 0.99 : -0.99,
-                lastY: (top  < 0) ? 0.99 : -0.99,
+                lastY: (top < 0) ? 0.99 : -0.99,
                 start: +new Date
             });
 
@@ -152,7 +151,7 @@ $(function ($) {
                 return;
             }
 
-            var step = function() {
+            var step = function () {
 
                 var now = +new Date;
                 var scrollX = 0;
@@ -161,7 +160,7 @@ $(function ($) {
                 for (var i = 0; i < que.length; i++) {
 
                     var item = que[i];
-                    var elapsed  = now - item.start;
+                    var elapsed = now - item.start;
                     var finished = (elapsed >= animtime);
 
                     // scroll position: [0, 1]
@@ -186,7 +185,8 @@ $(function ($) {
 
                     // delete and step back if it's over
                     if (finished) {
-                        que.splice(i, 1); i--;
+                        que.splice(i, 1);
+                        i--;
                     }
                 }
 
@@ -222,7 +222,7 @@ $(function ($) {
                 } else {
                     pending = false;
                 }
-            }
+            };
 
             // start a new queue of actions
             setTimeout(step, 0);
@@ -283,15 +283,15 @@ $(function ($) {
          */
         function keydown(event) {
 
-            var target   = event.target;
+            var target = event.target;
             var modifier = event.ctrlKey || event.altKey || event.metaKey;
 
             // do nothing if user is editing text
             // or using a modifier key (except shift)
-            if ( /input|textarea|embed/i.test(target.nodeName) ||
+            if (/input|textarea|embed/i.test(target.nodeName) ||
                 target.isContentEditable ||
-                event.defaultPrevented   ||
-                modifier ) {
+                event.defaultPrevented ||
+                modifier) {
                 return true;
             }
             // spacebar should trigger button press
@@ -330,7 +330,7 @@ $(function ($) {
                     break;
                 case key.end:
                     var damt = elem.scrollHeight - elem.scrollTop - clientHeight;
-                    y = (damt > 0) ? damt+10 : 0;
+                    y = (damt > 0) ? damt + 10 : 0;
                     break;
                 case key.left:
                     x = -arrowscroll;
@@ -359,9 +359,11 @@ $(function ($) {
          ***********************************************/
 
         var cache = {}; // cleared out every once in while
-        setInterval(function(){ cache = {}; }, 10 * 1000);
+        setInterval(function () {
+            cache = {};
+        }, 10 * 1000);
 
-        var uniqueID = (function() {
+        var uniqueID = (function () {
             var i = 0;
             return function (el) {
                 return el.uniqueID || (el.uniqueID = i++);
@@ -402,11 +404,11 @@ $(function ($) {
          ***********************************************/
 
         function addEvent(type, fn, bubble) {
-            window.addEventListener(type, fn, (bubble||false));
+            window.addEventListener(type, fn, (bubble || false));
         }
 
         function removeEvent(type, fn, bubble) {
-            window.removeEventListener(type, fn, (bubble||false));
+            window.removeEventListener(type, fn, (bubble || false));
         }
 
         function isNodeName(el, tag) {
