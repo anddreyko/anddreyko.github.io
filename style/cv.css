@@ -8,6 +8,10 @@
   line-height: 1.1;
 }
 
+.cv-contacts a {
+  text-decoration: underline;
+}
+
 .cv-contacts__contact {
   display: inline-block;
 }
