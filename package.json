@@ -1,0 +1,11 @@
+{
+  "name": "anddreyko.github.io",
+  "homepage": "https://anddreyko.github.io",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
