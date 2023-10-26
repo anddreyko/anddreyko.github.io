@@ -48,6 +48,10 @@
   margin-bottom: 0;
 }
 
+.cv-work > h3 {
+  margin-top: 0.2em;
+}
+
 .cv-work__group-header {
   text-transform: uppercase;
   line-height: 1;
