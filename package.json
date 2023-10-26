@@ -3,7 +3,8 @@
   "homepage": "https://anddreyko.github.io",
   "scripts": {
     "build": "npx @11ty/eleventy",
-    "serve": "npx @11ty/eleventy --serve"
+    "serve": "npx @11ty/eleventy --serve",
+    "predeploy": "rm -rf _site/* && npm run build"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1"
