@@ -1,0 +1,82 @@
+
+.cv-title {
+  text-align: center;
+}
+
+.cv-contacts {
+  text-align: center;
+  line-height: 1.1;
+}
+
+.cv-contacts__contact {
+  display: inline-block;
+}
+
+.cv-contacts__contact:before {
+  content: "•";
+  margin: 0 0.3em;
+}
+
+.cv-contacts__contact:first-child:before {
+  content: "";
+}
+
+.cv-status {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.cv-work ul,
+.cv-summary ul,
+.cv-summary ul,
+.cv-summary ul {
+  padding: 0;
+}
+
+.cv-work > *,
+.cv-summary {
+  margin-left: 4em;
+}
+
+.cv-work > h2,
+.cv-work > h3 {
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.cv-work__group-header {
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 1.5em;
+}
+
+.cv-section-header {
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  margin-top: 1.5em;
+}
+
+.cv-work_svyaznoy h2,
+.cv-work_svyaznoy h3,
+.cv-work_svyaznoy a {
+  color: #339;
+}
+
+.cv-work_euroset h2,
+.cv-work_euroset h3 {
+  color: #f90;
+}
+
+.cv-work_microsoft h2,
+.cv-work_microsoft h3 {
+  color: #09f;
+}
+
+.cv-hr {
+  margin-top: 4em;
+}
