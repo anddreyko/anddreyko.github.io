@@ -42,119 +42,17 @@ layout: base.njk
 
 
     {% set exps = cv.last_exp %}
-    {% for exp in exps %}
-        <article class="cv-work {% if exp.special %} cv-work_{{ exp.special }} {% endif %}">
-            <h2 class="cv-work__header">
-                {{ exp.name }}{% if exp.loc %}, <span class="cv-work__location">{{ exp.loc }}</span> {% endif %}
-                {% if exp.site %}
-                    · <a href="{{ exp.site.href }}" target="_blank">{{ exp.site.value }}</a>
-                {% endif %}
-            </h2>
-            <h3>
-                {{ exp.title }}
-                <time class="cv-work__interval">{{ exp.date.start }} — {{ exp.date.finish }}</time>
-            </h3>
-
-            {% for responsibility in exp.responsibility %}
-                {% if responsibility|is_string %}
-                    <p>
-                        {{ responsibility }}
-                    </p>
-                {% elseif responsibility|is_object %}
-
-                    {% if responsibility.group %}
-                        <p class="cv-work__group-header">{{ responsibility.group }}</p>
-                    {% endif %}
-
-                    {% for content in responsibility.content %}
-                        <ul>
-                            {% if content|is_string %}
-                                <li>{{ content }}</li>
-                            {% endif %}
-                        </ul>
-                    {% endfor %}
-                {% endif %}
-            {% endfor %}
-        </article>
-    {% endfor %}
+    {% include './_cv-exp.njk' %}
 
     <hr class="cv-hr">
 
     <h2 class="cv-section-header">{{ cv.early_exp_title }}</h2>
     {% set exps = cv.early_exp %}
-    {% for exp in exps %}
-        <article class="cv-work">
-            <h2>
-                {{ exp.name }}{% if exp.loc %}, <span class="cv-work__location">{{ exp.loc }}</span> {% endif %}
-                {% if exp.site %}
-                    · <a href="{{ exp.site.href }}" target="_blank">{{ exp.site.value }}</a>
-                {% endif %}
-            </h2>
-            <h3>
-                {{ exp.title }}
-                <time class="cv-work__interval">{{ exp.date.start }} — {{ exp.date.finish }}</time>
-            </h3>
-
-            {% for responsibility in exp.responsibility %}
-                {% if responsibility|is_string %}
-                    <p>
-                        {{ responsibility }}
-                    </p>
-                {% elseif responsibility|is_object %}
-
-                    {% if responsibility.group %}
-                        <h4>{{ responsibility.group }}</h4>
-                    {% endif %}
-
-                    {% for content in responsibility.content %}
-                        <ul>
-                            {% if content|is_string %}
-                                <li>{{ content }}</li>
-                            {% endif %}
-                        </ul>
-                    {% endfor %}
-                {% endif %}
-            {% endfor %}
-        </article>
-    {% endfor %}
+    {% include './_cv-exp.njk' %}
 
     <hr class="cv-hr">
 
     <h2 class="cv-section-header">{{ cv.ed_exp_title }}</h2>
     {% set exps = cv.ed_exp %}
-    {% for exp in exps %}
-        <article class="cv-work">
-            <h2>
-                {{ exp.name }}{% if exp.loc %}, <span class="cv-work__location">{{ exp.loc }}</span> {% endif %}
-                {% if exp.site %}
-                    · <a href="{{ exp.site.href }}" target="_blank">{{ exp.site.value }}</a>
-                {% endif %}
-            </h2>
-            <h3>
-                {{ exp.title }}{% if exp.date %}
-                    <time class="cv-work__interval">{{ exp.date.start }} — {{ exp.date.finish }}</time>{% endif %}
-            </h3>
-
-            {% for responsibility in exp.responsibility %}
-                {% if responsibility|is_string %}
-                    <p>
-                        {{ responsibility }}
-                    </p>
-                {% elseif responsibility|is_object %}
-
-                    {% if responsibility.group %}
-                        <h4>{{ responsibility.group }}</h4>
-                    {% endif %}
-
-                    {% for content in responsibility.content %}
-                        <ul>
-                            {% if content|is_string %}
-                                <li>{{ content }}</li>
-                            {% endif %}
-                        </ul>
-                    {% endfor %}
-                {% endif %}
-            {% endfor %}
-        </article>
-    {% endfor %}
+    {% include './_cv-exp.njk' %}
 </main>
