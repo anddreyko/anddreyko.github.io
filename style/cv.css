@@ -134,12 +134,12 @@
 }
 
 .cv-work_svyaznoy {
-  --main-color: #339
+  --main-color: #4c1e87
 }
 
 @media (prefers-color-scheme: dark) {
   .cv-work_svyaznoy {
-    --main-color: #c39;
+    --main-color: #e41d94;
   }
 }
 
@@ -149,7 +149,7 @@
 
 @media (prefers-color-scheme: dark) {
   .cv-work_euroset {
-    --main-color: #fc3;
+    --main-color: #ffdc1d;
   }
 }
 
@@ -159,7 +159,7 @@
 
 @media (prefers-color-scheme: dark) {
   .cv-work_microsoft {
-    --main-color: #09f;
+    --main-color: #03a5f0fc;
   }
 }
 
