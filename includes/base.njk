@@ -10,6 +10,9 @@
     {% endif %}
     <title>{{ title or site.title }}</title>
 
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="/style/light.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="/style/dark.css" media="(prefers-color-scheme: dark)">
     <link rel="stylesheet" href="/style/site.css">
     <link rel="stylesheet" href="/style/cv.css">
 </head>

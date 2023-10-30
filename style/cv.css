@@ -137,12 +137,30 @@
   --main-color: #339
 }
 
+@media (prefers-color-scheme: dark) {
+  .cv-work_svyaznoy {
+    --main-color: #c39;
+  }
+}
+
 .cv-work_euroset {
   --main-color: #f90
 }
 
+@media (prefers-color-scheme: dark) {
+  .cv-work_euroset {
+    --main-color: #fc3;
+  }
+}
+
 .cv-work_microsoft {
-  --main-color: #06c
+  --main-color: #06c;
+}
+
+@media (prefers-color-scheme: dark) {
+  .cv-work_microsoft {
+    --main-color: #09f;
+  }
 }
 
 /* HR */
