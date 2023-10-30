@@ -12,6 +12,7 @@
 .cv-contacts {
   text-align: center;
   line-height: 1.1;
+  padding: 0;
 }
 
 .cv-contacts a {
@@ -24,7 +25,7 @@
 
 .cv-contacts__contact:before {
   content: "•";
-  margin: 0 0.3em;
+  margin: 0 0.3em 0 0;
 }
 
 .cv-contacts__contact:first-child:before {
@@ -35,7 +36,6 @@
   .cv-contacts {
     margin-left: 4em;
     text-align: left;
-    padding: 0;
   }
 
   .cv-contacts__contact {
