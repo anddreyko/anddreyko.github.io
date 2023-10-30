@@ -1,9 +1,11 @@
 {% for exp in exps %}
     <article class="cv-work {% if exp.special %} cv-work_{{ exp.special }} {% endif %}">
         <h2 class="cv-work__header">
-            {{ exp.name }}{% if exp.loc %}, <span class="cv-work__location">{{ exp.loc }}</span> {% endif %}
+            {{ exp.name }}{% if exp.loc %}, <span class="cv-work__location">{{ exp.loc }}</span>{% endif %}
             {% if exp.site %}
-                · <a href="{{ exp.site.href }}" target="_blank">{{ exp.site.value }}</a>
+                <span class="cv-work__site">
+                    <a href="{{ exp.site.href }}" target="_blank">{{ exp.site.value }}</a>
+                </span>
             {% endif %}
         </h2>
         <h3>

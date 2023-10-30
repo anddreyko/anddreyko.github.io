@@ -162,6 +162,14 @@
   background-image: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-9&color=0066cc);
 }
 
+.cv-work__site {
+  display: inline-block;
+}
+
+.cv-work__site:before {
+  content: "· ";
+}
+
 /* SECTIONS */
 .cv-hr {
   margin-top: 2em;
