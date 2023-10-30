@@ -21,6 +21,7 @@
 
 .cv-contacts__contact {
   display: inline-block;
+  padding: 0;
 }
 
 .cv-contacts__contact:before {
