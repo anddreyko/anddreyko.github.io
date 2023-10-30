@@ -85,6 +85,10 @@
   }
 }
 
+.cv-work > h2 {
+  margin-top: 2em;
+}
+
 .cv-work > h2,
 .cv-work > h3 {
   margin-left: 0;
