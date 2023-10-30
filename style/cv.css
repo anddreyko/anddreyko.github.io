@@ -5,7 +5,7 @@
 
 .cv-header__name,
 .cv-header__title {
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 
 /* CONTACTS */
@@ -104,13 +104,13 @@
 }
 
 .cv-work__location {
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 
 /* TIME INTERVAL */
 .cv-work__interval {
   font-style: italic;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 
 @media (max-width: 640px) {
