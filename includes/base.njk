@@ -10,6 +10,8 @@
     {% endif %}
     <title>{{ title or site.title }}</title>
 
+    {% set timestamp = site.version %}
+
     <meta name="color-scheme" content="light dark">
     <link rel="stylesheet" href="/style/light.css" media="(prefers-color-scheme: light)">
     <link rel="stylesheet" href="/style/dark.css" media="(prefers-color-scheme: dark)">
