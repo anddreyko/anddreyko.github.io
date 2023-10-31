@@ -1,0 +1,9 @@
+---
+permalink: style/style.css
+---
+{% set css %}
+    {% include "includes/style/site.css" %}
+    {% include "includes/style/cv.css" %}
+{% endset %}
+
+{{ css | postcss | cssmin | safe }}
