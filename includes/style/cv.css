@@ -149,17 +149,20 @@
 
 .cv-work_svyaznoy .cv-work__header {
   --main-color: #fff;
-  background-image: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-9&color=4c1e87);
+  background-color: #4c1e87;
+  mask-image: url(/images/highlights.svg);
 }
 
 .cv-work_euroset .cv-work__header {
   --main-color: #111;
-  background-image: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-9&color=ffdc1d);
+  background-color: #ffdc1d;
+  mask-image: url(/images/highlights.svg);
 }
 
 .cv-work_microsoft .cv-work__header {
   --main-color: #fff;
-  background-image: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-9&color=0066cc);
+  background-color: #06c;
+  mask-image: url(/images/highlights.svg);
 }
 
 .cv-work__site {
@@ -172,21 +175,7 @@
 
 /* SECTIONS */
 .cv-hr {
-  margin-top: 2em;
-  background-position-y: 2em;
-  padding-top: 2em;
-  background-size: 100% 0.2em;
-  background-repeat: no-repeat;
-}
-
-@media (prefers-color-scheme: light) {
-  .cv-hr {
-    background-image: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-9&color=000);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .cv-hr {
-    background-image: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-9&color=fff);
-  }
+  margin-top: 4em;
+  background-color: var(--main-color);
+  mask-image: url(/images/highlights.svg);
 }

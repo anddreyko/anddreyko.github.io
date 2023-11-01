@@ -47,13 +47,15 @@ layout: base.njk
         {% include './_cv-exp.njk' %}
     </section>
 
-    <section class="cv-hr">
+    <hr class="cv-hr">
+    <section>
         <h2 class="cv-section-header">{{ cv.early_exp_title }}</h2>
         {% set exps = cv.early_exp %}
         {% include './_cv-exp.njk' %}
     </section>
 
-    <section class="cv-hr">
+    <hr class="cv-hr">
+    <section>
         <h2 class="cv-section-header">{{ cv.ed_exp_title }}</h2>
         {% set exps = cv.ed_exp %}
         {% include './_cv-exp.njk' %}
