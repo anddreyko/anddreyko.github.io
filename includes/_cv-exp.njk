@@ -1,41 +1,49 @@
 {% for exp in exps %}
-    <article class="cv-work {% if exp.special %} cv-work_{{ exp.special }} {% endif %}">
-        <h2 class="cv-work__header">
-            {{ exp.name }}{% if exp.loc %}, <span class="cv-work__location">{{ exp.loc }}</span>{% endif %}
+    <article class="cv-article page__article">
+        <h2 class="cv-article__header{% if exp.special %} cv-highlights cv-highlights_{{ exp.special }} {% endif %}">
+            {{ exp.name }}{% if exp.loc %}, <span class="cv-article__location">{{ exp.loc }}</span>{% endif %}
             {% if exp.site %}
-                <span class="cv-work__site">
+                <span class="cv-article__site">
                     <a href="{{ exp.site.href }}" target="_blank">{{ exp.site.value }}</a>
                 </span>
             {% endif %}
         </h2>
-        <h3>
-            {{ exp.title }}
-            {% if exp.date %}
-                <span class="cv-work__interval">{{ exp.date.start }} — {{ exp.date.finish }}</span>
-            {% endif %}
-        </h3>
-
-        {% for responsibility in exp.responsibility %}
-            {% if responsibility|is_string %}
-                <p>
-                    {{ responsibility }}
-                </p>
-            {% elseif responsibility|is_object %}
-
-                {% if responsibility.group %}
-                    <p class="cv-work__group-header">{{ responsibility.group }}</p>
+        {% if exp.title or exp.interval %}
+            <h3 class="cv-article__subheader">
+                {% if exp.title %}
+                    <span class="cv-article__title">{{ exp.title }}</span>
                 {% endif %}
-
-                {% if responsibility.content %}
-                    <ul>
-                        {% for content in responsibility.content %}
-                            {% if content|is_string %}
-                                <li>{{ content }}</li>
-                            {% endif %}
-                        {% endfor %}
-                    </ul>
+                {% if exp.interval %}
+                    <span class="cv-article__interval">{{ exp.interval.start }} — {{ exp.interval.finish }}</span>
                 {% endif %}
-            {% endif %}
-        {% endfor %}
+            </h3>
+        {% endif %}
+
+        {% if exp.responsibility %}
+            <div class="cv-article__content">
+                {% for responsibility in exp.responsibility %}
+                    {% if responsibility|is_string %}
+                        <p>
+                            {{ responsibility }}
+                        </p>
+                    {% elseif responsibility|is_object %}
+
+                        {% if responsibility.group %}
+                            <p class="cv-section-header cv-article__group">{{ responsibility.group }}</p>
+                        {% endif %}
+
+                        {% if responsibility.list %}
+                            <ul>
+                                {% for list in responsibility.list %}
+                                    {% if list|is_string %}
+                                        <li>{{ list }}</li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+        {% endif %}
     </article>
 {% endfor %}

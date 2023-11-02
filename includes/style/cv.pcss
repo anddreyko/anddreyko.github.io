@@ -1,0 +1,158 @@
+/* PAGE */
+.page {
+    &__header-row {
+        margin-bottom: 0.5rem;
+
+        &_stroke {
+            @media (max-width: 680px) {
+                margin-left: 6rem;
+            }
+            @media (max-width: 480px) {
+                margin-left: 4rem;
+            }
+        }
+    }
+
+    &__article {
+        margin-bottom: 2rem;
+    }
+}
+
+/* HEADER */
+.cv-header {
+    text-align: center;
+
+    &__name,
+    &__title {
+        white-space: nowrap;
+    }
+}
+
+/* CONTACTS */
+.cv-contacts {
+    text-align: center;
+
+    &__contact {
+        display: inline-block;
+
+        @media (max-width: 680px) {
+            display: block;
+            text-align: left;
+        }
+
+        &:before {
+            content: "•";
+            padding: 0 0.5rem;
+
+            @media (max-width: 680px) {
+                content: "";
+                padding: 0;
+            }
+        }
+
+        &:first-child:before {
+            content: "";
+            padding: 0;
+        }
+    }
+}
+
+/* STATUS */
+.cv-status {
+    text-align: center;
+
+    @media (max-width: 680px) {
+        text-align: left;
+    }
+}
+
+/* ARTICLE */
+.cv-article {
+    &__content {
+        margin-left: 4rem;
+
+        @media (max-width: 480px) {
+            margin-left: 2rem;
+        }
+    }
+
+    &__group {
+        margin-top: 1.25rem;
+    }
+
+    &__location {
+        white-space: nowrap;
+    }
+
+    &__interval {
+        font-style: italic;
+        font-weight: lighter;
+        white-space: nowrap;
+
+        @media (max-width: 680px) {
+            display: block;
+        }
+    }
+
+    &__header {
+        display: inline-block;
+        padding: 0 2rem 0.25rem 0.75rem;
+        margin-left: -0.75rem;
+    }
+
+    &__site {
+        display: inline-block;
+
+        &:before {
+            content: "· ";
+        }
+    }
+}
+
+/* HIGHLIGHTS */
+.cv-highlights {
+    background-position-x: 0.25em;
+    background-position-y: 0;
+    background-repeat: no-repeat;
+    mask-image: url(/images/highlights.svg);
+    color: var(--main-text-color);
+
+    &_svyaznoy {
+        --main-text-color: #fff;
+        background-color: #4c1e87;
+    }
+
+    &_euroset {
+        --main-text-color: #111;
+        background-color: #ffdc1d;
+    }
+
+    &_microsoft {
+        --main-text-color: #fff;
+        background-color: #06c;
+    }
+}
+
+/* SECTIONS */
+.cv-hr {
+    &:before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: var(--main-color);
+        mask-image: url(/images/highlights.svg);
+        margin: 4rem 0 2rem;
+    }
+
+    &__header {
+        margin-bottom: 1rem;
+    }
+}
+
+/* SECTION HEADER */
+.cv-section-header {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+}

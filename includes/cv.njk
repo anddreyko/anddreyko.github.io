@@ -1,14 +1,14 @@
 ---
 layout: base.njk
 ---
-<header>
-    <h1 class="cv-header">
+<header class="page-header">
+    <h1 class="cv-header page__header-row">
         <span class="cv-header__name">{{ cv.name }}</span>, <span class="cv-header__title">{{ cv.title }}</span>
     </h1>
 
     {% set contacts = cv.contacts %}
     {% if contacts %}
-        <ul class="cv-contacts">
+        <ul class="cv-contacts page__header-row page__header-row_stroke">
             {% for contact in contacts %}
                 <li class="cv-contacts__contact"><strong>{{ contact.name }}</strong>:
                     <a href="{{ contact.link }}" {% if contact.external %} target="_blank" {% endif %}>
@@ -18,46 +18,44 @@ layout: base.njk
             {% endfor %}
         </ul>
     {% endif %}
+
+    {% set status = cv.status %}
+    {% if status %}
+        <p class="cv-status page__header-row page__header-row_stroke">{{ status }}</p>
+    {% endif %}
 </header>
 <main>
-    <section>
-        {% set status = cv.status %}
-        {% if status %}
-            <p class="cv-status">{{ status }}</p>
-        {% endif %}
-    </section>
+    {% set exps = cv.summary %}
+    {% if exps %}
+        <section>
+            {% include './_cv-exp.njk' %}
+        </section>
+    {% endif %}
 
-    <section>
-        {% set summary = cv.summary %}
-        {% if summary %}
-            <article class="cv-summary">
-                <ul>
-                    {% for content in summary %}
-                        {% if content|is_string %}
-                            <li>{{ content }}</li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
-            </article>
-        {% endif %}
-    </section>
+    {% set exps = cv.last_exp %}
+    {% if exps %}
+        <section>
+            {% include './_cv-exp.njk' %}
+        </section>
+    {% endif %}
 
-    <section>
-        {% set exps = cv.last_exp %}
-        {% include './_cv-exp.njk' %}
-    </section>
+    {% set exps = cv.early_exp %}
+    {% if exps %}
+        <section class="cv-hr">
+            {% if cv.early_exp_title %}
+                <h2 class="cv-section-header cv-hr__header">{{ cv.early_exp_title }}</h2>
+            {% endif %}
+            {% include './_cv-exp.njk' %}
+        </section>
+    {% endif %}
 
-    <hr class="cv-hr">
-    <section>
-        <h2 class="cv-section-header">{{ cv.early_exp_title }}</h2>
-        {% set exps = cv.early_exp %}
-        {% include './_cv-exp.njk' %}
-    </section>
-
-    <hr class="cv-hr">
-    <section>
-        <h2 class="cv-section-header">{{ cv.ed_exp_title }}</h2>
-        {% set exps = cv.ed_exp %}
-        {% include './_cv-exp.njk' %}
-    </section>
+    {% set exps = cv.ed_exp %}
+    {% if exps %}
+        <section class="cv-hr">
+            {% if cv.ed_exp_title %}
+                <h2 class="cv-section-header cv-hr__header">{{ cv.ed_exp_title }}</h2>
+            {% endif %}
+            {% include './_cv-exp.njk' %}
+        </section>
+    {% endif %}
 </main>
