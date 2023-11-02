@@ -1,5 +1,6 @@
 const CleanCSS = require('clean-css')
 const postcss = require('postcss')
+const postcssNested = require('postcss-nested')
 const autoprefixer = require('autoprefixer')
 const htmlmin = require('html-minifier')
 
@@ -16,7 +17,7 @@ module.exports = function (eleventyConfig) {
     (code) => new CleanCSS({}).minify(code).styles)
 
   eleventyConfig.addNunjucksAsyncFilter('postcss', (cssCode, done) => {
-    postcss([autoprefixer()])
+    postcss([postcssNested(), autoprefixer()])
       .process(cssCode, { from: undefined })
       .then((r) => done(null, r.css), (e) => done(e, null))
   })
