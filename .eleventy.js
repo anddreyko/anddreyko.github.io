@@ -9,6 +9,15 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'files/fav': '/' })
   eleventyConfig.addPassthroughCopy({ 'files/images': '/images' })
 
+  let date = null
+  eleventyConfig.addShortcode('hash', () => {
+    if (!date) {
+      date = Date.now()
+    }
+
+    return date
+  })
+
   eleventyConfig.addFilter('is_string', (value) => typeof value === 'string')
 
   eleventyConfig.addFilter('is_object', (value) => typeof value === 'object')
