@@ -30,15 +30,16 @@
 
 /* CONTACTS */
 .cv-contacts {
-    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    @media (max-width: 680px) {
+        flex-direction: column;
+    }
 
     &__contact {
-        display: inline-block;
-
-        @media (max-width: 680px) {
-            display: block;
-            text-align: left;
-        }
+        list-style-type: none;
 
         &:before {
             content: "•";
