@@ -3,6 +3,8 @@ const postcss = require('postcss')
 const postcssNested = require('postcss-nested')
 const autoprefixer = require('autoprefixer')
 const htmlmin = require('html-minifier')
+const MarkdownIt = require('markdown-it')
+const md = new MarkdownIt()
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('style')
@@ -24,6 +26,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter('cssmin',
     (code) => new CleanCSS({}).minify(code).styles)
+
+  eleventyConfig.addPairedShortcode('md', content => md.render(content))
 
   eleventyConfig.addNunjucksAsyncFilter('postcss', (cssCode, done) => {
     postcss([postcssNested(), autoprefixer()])

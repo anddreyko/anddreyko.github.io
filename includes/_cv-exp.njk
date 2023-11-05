@@ -37,7 +37,7 @@
                             <ul>
                                 {% for list in responsibility.list %}
                                     {% if list|is_string %}
-                                        <li>{{ list }}</li>
+                                        <li>{% md %}{{ list }}{% endmd %}</li>
                                     {% endif %}
                                 {% endfor %}
                             </ul>
