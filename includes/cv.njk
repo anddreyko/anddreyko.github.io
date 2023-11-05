@@ -10,8 +10,9 @@ layout: base.njk
     {% if contacts %}
         <ul class="cv-contacts page__header-row">
             {% for contact in contacts %}
-                <li class="cv-contacts__contact"><strong>{{ contact.name }}</strong>:
-                    <a href="{{ contact.link }}" {% if contact.external %} target="_blank" {% endif %}>
+                <li class="cv-contacts__contact"><strong class="cv-contacts__name">{{ contact.name }}</strong>:
+                    <a class="cv-contacts__link"
+                       href="{{ contact.link }}" {% if contact.external %} target="_blank" {% endif %}>
                         {{ contact.value }}
                     </a>
                 </li>
