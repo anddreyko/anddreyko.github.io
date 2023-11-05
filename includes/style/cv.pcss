@@ -163,6 +163,12 @@
         background-color: var(--text-color);
         mask-image: url(/images/highlights.svg);
         margin: 4rem 0 2rem;
+
+        @media print {
+            height: 1px;
+            margin-top: 1cm;
+            border-bottom: var(--text-color) solid 1px;
+        }
     }
 
     &__header {
