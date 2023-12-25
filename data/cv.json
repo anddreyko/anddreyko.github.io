@@ -40,7 +40,6 @@
     {
       "special": "vodohod",
       "name": "ВодоходЪ.Тех",
-      "loc": "Москва",
       "site": {
         "value": "vodohod.tech",
         "href": "https://vodohod.tech"
