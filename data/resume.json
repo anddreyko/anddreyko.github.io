@@ -65,10 +65,6 @@
       "special": "svyaznoy",
       "name": "Связной",
       "loc": "Москва",
-      "site": {
-        "value": "svyaznoy.ru",
-        "href": "https://svyaznoy.ru"
-      },
       "title": "Ведущий разработчик",
       "interval": {
         "start": "май 2019",
