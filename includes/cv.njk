@@ -3,10 +3,10 @@ layout: base.njk
 ---
 <header class="page-header">
     <h1 class="cv-header page__header-row">
-        <span class="cv-header__name">{{ cv.name }}</span>, <span class="cv-header__title">{{ cv.title }}</span>
+        <span class="cv-header__name">{{ resume.name }}</span>, <span class="cv-header__title">{{ resume.title }}</span>
     </h1>
 
-    {% set contacts = cv.contacts %}
+    {% set contacts = resume.contacts %}
     {% if contacts %}
         <ul class="cv-contacts page__header-row">
             {% for contact in contacts %}
@@ -20,41 +20,41 @@ layout: base.njk
         </ul>
     {% endif %}
 
-    {% set status = cv.status %}
+    {% set status = resume.status %}
     {% if status %}
         <p class="cv-status page__header-row">{{ status }}</p>
     {% endif %}
 </header>
 <main>
-    {% set exps = cv.summary %}
+    {% set exps = resume.summary %}
     {% if exps %}
         <section>
             {% include './_cv-exp.njk' %}
         </section>
     {% endif %}
 
-    {% set exps = cv.last_exp %}
+    {% set exps = resume.last_exp %}
     {% if exps %}
         <section>
             {% include './_cv-exp.njk' %}
         </section>
     {% endif %}
 
-    {% set exps = cv.early_exp %}
+    {% set exps = resume.early_exp %}
     {% if exps %}
         <section class="cv-hr">
-            {% if cv.early_exp_title %}
-                <h2 class="cv-section-header cv-hr__header">{{ cv.early_exp_title }}</h2>
+            {% if resume.early_exp_title %}
+                <h2 class="cv-section-header cv-hr__header">{{ resume.early_exp_title }}</h2>
             {% endif %}
             {% include './_cv-exp.njk' %}
         </section>
     {% endif %}
 
-    {% set exps = cv.ed_exp %}
+    {% set exps = resume.ed_exp %}
     {% if exps %}
         <section class="cv-hr">
-            {% if cv.ed_exp_title %}
-                <h2 class="cv-section-header cv-hr__header">{{ cv.ed_exp_title }}</h2>
+            {% if resume.ed_exp_title %}
+                <h2 class="cv-section-header cv-hr__header">{{ resume.ed_exp_title }}</h2>
             {% endif %}
             {% include './_cv-exp.njk' %}
         </section>
